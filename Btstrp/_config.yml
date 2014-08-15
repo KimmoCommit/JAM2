@@ -1,0 +1,4 @@
+name: TestinJekyll
+permalink: none
+markdown: kramdown
+highlighter: true

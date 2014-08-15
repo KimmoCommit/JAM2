@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="content-container">
+ <div id="banner">
+ </div>
+ <div class="snippet-list-container">
+  <div class="row">
+    <div class="col-md-12">
+      <input type="text" placeholder="search" style="padding:0px;margin:1% auto 1% 1%;">
+    </div>
+  </div>
+
+  <div class="list-group">
+    {% for category in site.categories %}
+    {% unless category contains "blog" %}
+    <h1 class="category-title" style="padding:10px;" id="{{ category | first }}">
+      {{ category | first | capitalize }}
+    </h1>
+    {% for posts in category %}
+    {% for post in posts %}
+    {% if post.title != null %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="list-group-item post">
+      <h4 class="list-group-item-heading">
+        {{ post.title }}
+      </h4>
+      <p class="list-group-item-text">
+        {{ post.description }}
+      </p>
+    </a>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    {% endunless %}
+    {% endfor %}
+  </div><!-- .list-group-->
+</div><!-- .snippet-list-container-->
+
+
+<div id="right-nav">
+ <div class="list-group">
+   {% for category in site.categories %}
+   {% unless category contains "blog" %}
+   <a href="#{{ category | first }}" class="list-group-item">
+     {{ category | first | capitalize }} 
+     <span class="badge">
+       {{ category | last | size }}
+     </span>
+   </a>
+   {% endunless %}
+   {% endfor %}
+ </div>
+</div><!-- .right-nav-->
+</div><!-- .content-container-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="javascripts/bootstrap.js"></script>
+<script>
+  $(function(){
+    var c = new Counter();
+    c.Count()
+  });
+</script>
