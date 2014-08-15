@@ -2,3 +2,4 @@ name: TestinJekyll
 permalink: none
 markdown: kramdown
 highlighter: true
+baseurl: /JAM2
