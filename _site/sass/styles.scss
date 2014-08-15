@@ -25,18 +25,27 @@ body{
 	background:url('../img/banner.jpg') center center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	display:none;
+	//display:none;
 }
 
 .snippet-list-container{
 	width:80%;
 	height:100%;
 	float:left;
-//padding:10px;
 
-.list-group-item {
-	min-height:100px;
+	.list-group-item {
+		min-height:100px;
+	}
 }
+
+.news-list-container{
+	width:80%;
+	height:100%;
+	float:left;
+
+	.list-group-item {
+		min-height:100px;
+	}
 }
 
 .content-container{

@@ -8054,7 +8054,6 @@ button.close {
   background: url("../img/banner.jpg") center center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: none;
 }
 
 /* line 31, ../sass/styles.scss */
@@ -8063,19 +8062,30 @@ button.close {
   height: 100%;
   float: left;
 }
-/* line 37, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
 .snippet-list-container .list-group-item {
   min-height: 100px;
 }
 
-/* line 42, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
+.news-list-container {
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+/* line 46, ../sass/styles.scss */
+.news-list-container .list-group-item {
+  min-height: 100px;
+}
+
+/* line 51, ../sass/styles.scss */
 .content-container {
   height: 500px;
   width: 100%;
   padding: 1%;
 }
 
-/* line 50, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 #right-nav {
   float: right;
   width: 20%;
