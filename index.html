@@ -2,40 +2,40 @@
 layout: default
 ---
 
-<div class="content-container">
- <div id="banner">
- </div>
 
-<div class="news-list-container">
- <div class="list-group">
-  {% for category in site.categories %}
-  {% if category contains "news" %}
-  <h1 class="category-title" style="padding:10px;" id="{{ category | first }}">
-    {{ category | first | capitalize }}
-  </h1>
-  {% for posts in category %}
-  {% for post in posts %}
-  {% if post.title != null %}
-  <a href="{{ site.baseurl }}{{ post.url }}" class="list-group-item post">
-    <h4 class="list-group-item-heading">
-      {{ post.title }}
-    </h4>
-    <p class="list-group-item-text">
-      {{ post.description }}
-    </p>
-  </a>
-  {% endif %}
-  {% endfor %}
-  {% endfor %}
-  {% endif %}
-  {% endfor %}
-</div><!-- .list-group-->
+<div id="banner">
+</div>
+<div class="content-container index">
+ <div class="news-list-container">
+   <div class="list-group">
+    {% for category in site.categories %}
+    {% if category contains "news" %}
+    <h1 class="category-title" style="padding:10px;" id="{{ category | first }}">
+      {{ category | first | capitalize }}
+    </h1>
+    {% for posts in category %}
+    {% for post in posts %}
+    {% if post.title != null %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="list-group-item post">
+      <h4 class="list-group-item-heading">
+        {{ post.title }}
+      </h4>
+      <p class="list-group-item-text">
+        {{ post.description }}
+      </p>
+    </a>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </div><!-- .list-group-->
 </div><!-- .news-list-container-->
 
 
 <div id="right-nav">
  <div class="list-group">
-  <!-- {% for category in site.categories %}
+   {% for category in site.categories %}
    {% unless category contains "blog" %}
    <a href="#{{ category | first }}" class="list-group-item">
      {{ category | first | capitalize }} 
@@ -44,7 +44,7 @@ layout: default
      </span>
    </a>
    {% endunless %}
-   {% endfor %}-->
+   {% endfor %}
  </div>
 </div><!-- .right-nav-->
 </div><!-- .content-container-->
