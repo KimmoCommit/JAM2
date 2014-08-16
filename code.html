@@ -1,9 +1,35 @@
 ---
 layout: default
 ---
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">JAM</a>
+      </div>
 
-<div class="content-container">
- <div class="snippet-list-container">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="code.html">Code</a></li>
+          <li><a href="#">Software</a></li>
+          <li><a href="#">Other</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+      <h2><a class="navbar-brand" style="font-size:115%;" href="#">Coding</a></h2>
+    </ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
+<div class="snippet-list-container">
   <div class="row">
     <div class="col-md-12">
       <input type="text" placeholder="search" style="padding:0px;margin:1% auto 1% 1%;">
@@ -13,20 +39,22 @@ layout: default
   <div class="list-group">
     {% for category in site.categories %}
     {% unless category contains "news" %}
-    <h1 class="category-title" style="padding:10px;" id="{{ category | first }}">
-      {{ category | first | capitalize }}
-    </h1>
-    {% for posts in category %}
-    {% for post in posts %}
-    {% if post.title != null %}
-    <a href="{{ site.baseurl }}{{ post.url }}" class="list-group-item post">
-      <h4 class="list-group-item-heading">
-        {{ post.title }}
-      </h4>
-      <p class="list-group-item-text">
-        {{ post.description }}
-      </p>
-    </a>
+    <div class="list-category-container">
+      <h1 class="category-title" style="padding:10px;" id="{{ category | first }}">
+        {{ category | first | capitalize }}
+      </h1>
+      {% for posts in category %}
+      {% for post in posts %}
+      {% if post.title != null %}
+      <a href="{{ site.baseurl }}{{ post.url }}" class="list-group-item post">
+        <h4 class="list-group-item-heading">
+          {{ post.title }}
+        </h4>
+        <p class="list-group-item-text">
+          {{ post.description }}
+        </p>
+      </a>
+    </div>
     {% endif %}
     {% endfor %}
     {% endfor %}
@@ -39,9 +67,9 @@ layout: default
 <div id="right-nav">
  <div class="list-group">
    {% for category in site.categories %}
-   {% unless category contains "blog" %}
+   {% unless category contains "news" %}
    <a href="#{{ category | first }}" class="list-group-item">
-     {{ category | first | capitalize }} 
+     {{ category | first | capitalize }}
      <span class="badge">
        {{ category | last | size }}
      </span>
@@ -50,14 +78,27 @@ layout: default
    {% endfor %}
  </div>
 </div><!-- .right-nav-->
-</div><!-- .content-container-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="javascripts/bootstrap.js"></script>
 <script>
   $(function(){
-    var c = new Counter();
-    c.Count()
+   var r = new Resizor();
+   r.resizeHeight(".snippet-list-container .list-group");
+
+   r.resizeToDivHeight("#right-nav",".snippet-list-container");
+
+
+    //r.resizeToDivHeight("body","");
+  //var korkeus = $(".snippet-list-container").height();
+  //alert(korkeus);
+});
+</script>
+<script>
+  $(function(){
+    $("#right-nav a").click(function(){
+      $('html, body').animate({scrollTop: $( $.attr(this, 'href')).offset().top - 150}, 400);
+    });
   });
 </script>

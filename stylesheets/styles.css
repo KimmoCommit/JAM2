@@ -8034,60 +8034,168 @@ button.close {
     display: none !important;
   }
 }
+/* COLORS */
 /* OVERRIDES*/
-/* line 6, ../sass/styles.scss */
+/* line 9, ../sass/styles.scss */
 .navbar {
   margin-bottom: 0px !important;
   border-radius: 0px !important;
 }
 
-/* line 11, ../sass/styles.scss */
-.list-group-item {
-  border: 1px solid transparent !important;
+/* line 14, ../sass/styles.scss */
+.navbar-default {
+  background-color: #4d4da7;
+  border: 1px solid #4d4da7 !important;
+  border-radius: 5px 5px 0px 0px !important;
+  box-shadow: 1px 1px 1px #393993;
 }
 
 /* OVERRIDES END */
-/* line 22, ../sass/styles.scss */
-#banner {
-  width: 100%;
-  height: 180px;
-  background: url("../img/banner.jpg") center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* line 27, ../sass/styles.scss */
+body {
+  background-color: #fafafa;
+  padding: 0.2% 0.5% 0% 0.5%;
 }
 
 /* line 32, ../sass/styles.scss */
+.header {
+  border-radius: 5px 5px 0px 0px;
+}
+
+/* line 37, ../sass/styles.scss */
+#banner {
+  width: 100%;
+  height: 230px;
+  background: url("../img/banner.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid #4d4da7;
+  border-bottom: 15px solid #4d4da7;
+  background-color: #4d4da7;
+}
+
+/* line 51, ../sass/styles.scss */
 .snippet-list-container {
   width: 80%;
   height: 100%;
   float: left;
+  padding: 1%;
+  background-color: #fff;
+  background-image: linear-gradient(90deg, transparent 79px, transparent 79px, transparent 81px, transparent 81px), linear-gradient(#eeeeee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+  box-shadow: inset 1px 1px 1px #4d4da7;
+  border-top: 2px solid #393993;
 }
-/* line 36, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
+.snippet-list-container .list-group-item:hover {
+  background-color: #4d4da7;
+  color: white;
+}
+/* line 77, ../sass/styles.scss */
+.snippet-list-container .list-group-item:active, .snippet-list-container .list-group-item:focus, .snippet-list-container .list-group-item:visited {
+  background-color: #4d4da7;
+  color: white;
+}
+/* line 82, ../sass/styles.scss */
 .snippet-list-container .list-group-item {
   min-height: 100px;
+  border: 1px solid rgba(55, 55, 55, 0);
+  border-radius: 4px;
+  margin-bottom: 1%;
+  box-shadow: 1px 1px 1px black;
+  background-color: #4d4da7;
+  color: white;
+  transition: box-shadow 0.5s;
+}
+/* line 84, ../sass/styles.scss */
+.snippet-list-container .list-group-item .list-group-item-heading {
+  color: white;
 }
 
-/* line 43, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .news-list-container {
   width: 80%;
   height: 100%;
   float: left;
 }
-/* line 47, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .news-list-container .list-group-item {
   min-height: 100px;
 }
 
-/* line 52, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 .content-container {
-  height: 500px;
-  width: 100%;
-  padding: 1%;
+  display: inline-block;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 #right-nav {
   float: right;
   width: 20%;
-  min-height: 500px;
+  height: 100%;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #4d4da7;
+  box-shadow: 1px 1px 1px #626262;
+  border-top: 2px solid #7575cf;
 }
+/* line 125, ../sass/styles.scss */
+#right-nav .list-group-item {
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: transparent;
+  color: white;
+  transition: box-shadow 0.5s;
+}
+
+/* line 139, ../sass/styles.scss */
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 46px;
+  font-size: 46px;
+  margin: 0 0 23px 0;
+}
+
+/* line 146, ../sass/styles.scss */
+h2 {
+  font-family: 'Grand Hotel', cursive;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
+
+/* line 153, ../sass/styles.scss */
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
+
+/*
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 46px;
+	font-size: 43px;
+	margin: 0 0 23px 0;
+}
+h2 {
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	margin: 0 0 23px 0;
+}
+p {
+	font-family: 'Cantarell', sans-serif;
+	font-size: 17px;
+	line-height: 23px;
+	margin: 0 0 23px 0;
+}
+*/
