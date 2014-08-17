@@ -45,7 +45,7 @@ layout: default
         {% for posts in category %}
         {% for post in posts %}
         {% if post.title != null %}
-        <a href="../{{ site.baseurl }}/{{ post.url }}" class="list-group-item post">
+        <a href="../{{ site.baseurl }}{{ post.url }}" class="list-group-item post">
           <h4 class="list-group-item-heading">
             {{ post.title }}
           </h4>
