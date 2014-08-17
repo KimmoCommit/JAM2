@@ -12,10 +12,10 @@ $container-color:rgb(46, 88, 123);
 
 /* OVERRIDES*/
 .affix-top{
-position:fixed;
-top:0;
-z-index:1px;
-border-top:1px solid transparent !important;
+	position:fixed;
+	top:0;
+	z-index:1px;
+	border-top:1px solid transparent !important;
 }
 
 .navbar{
@@ -151,6 +151,7 @@ body{
 		margin-bottom:1%;
 		box-shadow: 1px 1px 1px $container-color - 40;
 		color:white;
+		background-color:$container-color;
 	}
 }
 
