@@ -3,12 +3,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="/{{ site.baseurl }}/stylesheets/styles.css" rel="stylesheet">
+	<link href="{{ site.baseurl }}/stylesheets/styles.css" rel="stylesheet">
 	<!--<link href="stylesheets/bootstrap.yeti.min.css" rel="stylesheet">-->
 	<!--<link href="http://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css" />-->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css" />
-	<script src="/{{ site.baseurl }}/javascripts/jquery-1.11.1.min.js" type="text/javascript"></script>
-	<script src="/{{ site.baseurl }}/javascripts/Resizor.js" type="text/javascript"></script>
+	<script src="{{ site.baseurl }}/javascripts/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="{{ site.baseurl }}/javascripts/Resizor.js" type="text/javascript"></script>
 	<title>Title</title>
 </head>
-<div class="settings"></div>
+
+<div class="dropdown" style="float:right;">
+
+	<a data-toggle="dropdown" href="#" class=""><img src="{{ site.baseurl }}/img/settings21.svg" alt="asd" style="width:20px;height:20px;"/></a>
+	<ul class="dropdown-menu" role="menu" style="right:0px !important;left:auto !important;" aria-labelledby="dLabel">
+		<li><a href="#">New Post</a></li>
+		<li><a href="#">New Post</a></li>
+	</ul>
+</div>
