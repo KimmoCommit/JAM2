@@ -8197,43 +8197,41 @@ body {
 }
 /* line 201, ../sass/styles.scss */
 .snippet-list-container .list-group-item {
-  min-height: 100px;
-  border: 1px solid #a7db0c;
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 1%;
-  box-shadow: 0.5px 1px 0.5px #a7db0c;
+  box-shadow: 0.5px 1px 0.5px #4d4d4d;
 }
-/* line 203, ../sass/styles.scss */
+/* line 211, ../sass/styles.scss */
 .snippet-list-container .list-group-item .list-group-item-heading {
   color: #4d4d4d;
 }
 
-/* line 218, ../sass/styles.scss */
+/* line 217, ../sass/styles.scss */
 h1.category-title {
   text-transform: uppercase;
   color: #4d4d4d;
   font-weight: bold;
 }
 
-/* line 225, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .news-list-container {
   width: 80%;
   height: 100%;
   float: left;
 }
-/* line 229, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 .news-list-container .list-group-item {
   min-height: 100px;
 }
 
-/* line 234, ../sass/styles.scss */
+/* line 233, ../sass/styles.scss */
 .content-container {
   clear: both;
   display: block;
   margin: 0px 0px 0px;
 }
 
-/* line 240, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 #right-nav {
   display: inline-block;
   width: 20%;
@@ -8242,7 +8240,7 @@ h1.category-title {
   box-shadow: 0px 1px 1px #626262;
   border-top: 2px solid #cfff34;
 }
-/* line 247, ../sass/styles.scss */
+/* line 246, ../sass/styles.scss */
 #right-nav .list-group-item {
   border: 1px solid transparent;
   border-radius: 0px;
@@ -8251,7 +8249,7 @@ h1.category-title {
   transition: box-shadow 0.5s;
 }
 
-/* line 257, ../sass/styles.scss */
+/* line 256, ../sass/styles.scss */
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -8260,7 +8258,7 @@ h1 {
   margin: 0 0 23px 0;
 }
 
-/* line 264, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 h2 {
   font-family: 'Grand Hotel', cursive;
   font-weight: normal;
@@ -8269,7 +8267,7 @@ h2 {
   margin: 0 0 23px 0;
 }
 
-/* line 271, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 p {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
