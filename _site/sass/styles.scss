@@ -301,3 +301,13 @@ p {
 	margin: 0 0 23px 0;
 }
 */
+
+#about{
+	.modal-header{
+		border-bottom:1px solid transparent;
+	}
+
+	.modal-footer{
+		border-top:1px solid transparent;
+	}
+}

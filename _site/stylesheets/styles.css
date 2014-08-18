@@ -8300,3 +8300,11 @@ p {
 	margin: 0 0 23px 0;
 }
 */
+/* line 306, ../sass/styles.scss */
+#about .modal-header {
+  border-bottom: 1px solid transparent;
+}
+/* line 310, ../sass/styles.scss */
+#about .modal-footer {
+  border-top: 1px solid transparent;
+}

@@ -82,37 +82,24 @@ layout: default
 </div><!-- .right-nav-->
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{site.baseurl}}/javascripts/bootstrap.js"></script>
+
 <script>
-  $(function(){
-   var r = new Resizor();
-  /* r.resizeHeight(".snippet-list-container .list-group");
-  */
-   //r.resizeToDivHeight("#right-nav",".snippet-list-container");
-    //r.resizeToDivHeight("body","");
-  //var korkeus = $(".snippet-list-container").height();
-  //alert(korkeus);
+$(function(){
+  $("#right-nav a").click(function(){
+    $('html, body').animate({scrollTop: $( $.attr(this, 'href')).offset().top - 150}, 400);
+  });
 });
 </script>
 <script>
-  $(function(){
-    $("#right-nav a").click(function(){
-      $('html, body').animate({scrollTop: $( $.attr(this, 'href')).offset().top - 150}, 400);
-    });
+$(function(){
+  $(window).scroll(function(){
+    var winH = $(window).scrollTop();
+    if(winH > 308){
+      $("#right-nav").addClass("affix-top");
+    } else {
+      $("#right-nav").removeClass("affix-top");
+    }
   });
-</script>
-<script>
-  $(function(){
-    $(window).scroll(function(){
-      var winH = $(window).scrollTop();
-      if(winH > 308){
-        $("#right-nav").addClass("affix-top");
-      } else {
-        $("#right-nav").removeClass("affix-top");
-      }
-    });
-  });
+});
 </script>

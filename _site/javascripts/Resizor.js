@@ -1,5 +1,5 @@
 function Resizor(){
-
+alert("hola");
     var winwidth = $(window).width();
     var winheight = $(window).height();
 

@@ -16,8 +16,26 @@
 
 	<a data-toggle="dropdown" href="#" class=""><img class="settings" src="{{ site.baseurl }}/img/settings21.svg" alt="asd" style="width:20px;height:20px;"/></a>
 	<ul class="dropdown-menu" role="menu" style="right:0px !important;left:auto !important;" aria-labelledby="dLabel">
-		<li><a href="#">New Post</a></li>
+		<li><a href="http://prose.io/" target="_blank">New Post</a></li>
+		<li><a href="http://github.com" target="_blank">Repository</a></li>
 		<li class="divider"></li>
-		<li><a href="#">About</a></li>
+		<li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
 	</ul>
+</div>
+
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title" id="myModalLabel">Jekyll Archive Manager</h4>
+			</div>
+			<div class="modal-body">
+				Jekyll Archive Manager (JAM) is a file manager outlook for the blog-aware, static site generator Jekyll.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
 </div>
