@@ -12,7 +12,7 @@ prose:
         field:
           label: "Layout"
           element: "hidden"
-          value: "post"
+          value: "code-layout"
       - name: "published"
         field:
           element: "checkbox"
