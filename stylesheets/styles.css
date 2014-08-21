@@ -8199,7 +8199,7 @@ body {
 .snippet-list-container .list-group-item {
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 1%;
-  box-shadow: 0.5px 1px 0.5px #4d4d4d;
+  box-shadow: 0.5px 1px 0.5px rgba(77, 77, 77, 0.62);
 }
 /* line 211, ../sass/styles.scss */
 .snippet-list-container .list-group-item .list-group-item-heading {
