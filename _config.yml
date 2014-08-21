@@ -3,3 +3,43 @@ permalink: none
 markdown: kramdown
 highlighter: true
 baseurl: /JAM2
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://kimmocommit.github.io/JAM2/'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "hidden"
+          value: "post"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: true
+      - name: "category"
+        field:
+          element: "select"
+          label: "Category"
+          options:
+            - name: "CSS"
+              value: "css"
+            - name: "Java"
+              value: "java"
+            - name: "Javascript"
+              value: "javascript"
+            - name: "Jekyll"
+              value: "jekyll"
+            - name: "PHP"
+              value: "php"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
