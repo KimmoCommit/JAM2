@@ -100,6 +100,70 @@
           
           
           <div class="list-category-container">
+            <h1 class="category-title" style="padding:10px;" id="code">
+              Code
+            </h1>
+            
+            
+            
+          
+          
+            
+            
+            <a href="/code/markdown.html" class="list-group-item post">
+              <h4 class="list-group-item-heading">
+                Welcome to Jell! ;D
+              </h4>
+              <p class="list-group-item-text">
+                dis is a javascript descsription
+              </p>
+            </a>
+          </div>
+          
+          
+            
+            <a href="/code/PHPDAO.html" class="list-group-item post">
+              <h4 class="list-group-item-heading">
+                Data Object
+              </h4>
+              <p class="list-group-item-text">
+                Accessing database with PHP's DAO
+              </p>
+            </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          <div class="list-category-container">
+            <h1 class="category-title" style="padding:10px;" id="linux">
+              Linux
+            </h1>
+            
+            
+            
+          
+          
+            
+            
+            <a href="/linux/firstSoftware.html" class="list-group-item post">
+              <h4 class="list-group-item-heading">
+                SSH
+              </h4>
+              <p class="list-group-item-text">
+                jtn
+              </p>
+            </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          <div class="list-category-container">
             <h1 class="category-title" style="padding:10px;" id="php">
               Php
             </h1>
@@ -121,44 +185,6 @@
           </div>
           
           
-            
-            <a href="/php/PHPDAO.html" class="list-group-item post">
-              <h4 class="list-group-item-heading">
-                Data Object
-              </h4>
-              <p class="list-group-item-text">
-                Accessing database with PHP's DAO
-              </p>
-            </a>
-          </div>
-          
-          
-          
-          
-          
-          
-          <div class="list-category-container">
-            <h1 class="category-title" style="padding:10px;" id="javascript">
-              Javascript
-            </h1>
-            
-            
-            
-          
-          
-            
-            
-            <a href="/javascript/markdown.html" class="list-group-item post">
-              <h4 class="list-group-item-heading">
-                Welcome to Jell! ;D
-              </h4>
-              <p class="list-group-item-text">
-                dis is a javascript descsription
-              </p>
-            </a>
-          </div>
-          
-          
           
           
           
@@ -174,8 +200,8 @@
          
          
          
-         <a href="#php" class="list-group-item">
-           Php
+         <a href="#code" class="list-group-item">
+           Code
            <span class="badge">
              2
            </span>
@@ -183,8 +209,17 @@
          
          
          
-         <a href="#javascript" class="list-group-item">
-           Javascript
+         <a href="#linux" class="list-group-item">
+           Linux
+           <span class="badge">
+             1
+           </span>
+         </a>
+         
+         
+         
+         <a href="#php" class="list-group-item">
+           Php
            <span class="badge">
              1
            </span>

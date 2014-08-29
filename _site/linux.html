@@ -46,8 +46,9 @@
 
 <body>
 <div id="banner" style="margin-bottom:0.5%;">
-  <div class="banner-text">Welcome!</div>
+  <div class="banner-text">Linux</div>
 </div>
+
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -64,34 +65,63 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="code.html">Code</a></li>
-          <li><a href="linux.html">Linux</a></li>
-          <li><a href="windows.html">Windows</a></li>
-          <li><a href="#">Search</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <!--<form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>-->
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+         <li><a href="code.html">Code</a></li>
+         <li><a href="linux.html">Linux</a></li>
+         <li><a href="windows.html">Windows</a></li>
+         <li><a href="#">Search</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+       </ul>
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+ </nav>
+ <div class="snippet-list-container">
+  <div class="list-group">
+   
+   
+   
+   
+   <div class="list-category-container">
+    <h1 class="tag-title" style="padding:10px;" id="SSH">
+      Ssh
+    </h1>
+    
+    <a href="/linux/firstSoftware.html" class="list-group-item post">
+      <h4 class="list-group-item-heading">
+        SSH
+      </h4>
+      <p class="list-group-item-text">
+        jtn
+      </p>
+    </a>
+  </div>
+  
+  
+  
+   
+   
+  
+   
+   
+  
 
-  <div class="index-container index">
-   <h1> Lorem ipsum </h1>
- </div><!-- .news-list-container-->
 
-<!--
+
+</div><!-- .list-group-->
+
+</div><!-- .snippet-list-container-->    
+
+
+
+</div>
 <div id="right-nav">
  <div class="list-group">
    
    
-   <a href="#news" class="list-group-item">
-     News 
+   
+   
+   <a href="#SSH" class="list-group-item">
+     Ssh
      <span class="badge">
        1
      </span>
@@ -99,43 +129,34 @@
    
    
    
-   <a href="#code" class="list-group-item">
-     Code 
-     <span class="badge">
-       2
-     </span>
-   </a>
    
    
    
-   <a href="#linux" class="list-group-item">
-     Linux 
-     <span class="badge">
-       1
-     </span>
-   </a>
-   
-   
-   
-   <a href="#php" class="list-group-item">
-     Php 
-     <span class="badge">
-       1
-     </span>
-   </a>
    
    
  </div>
 </div><!-- .right-nav-->
-</div><!-- .content-container-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="..//javascripts/bootstrap.js"></script>
+
+
+<script src="/javascripts/bootstrap.js"></script>
+
 <script>
   $(function(){
-    var c = new Counter();
-    c.Count()
+    $("#right-nav a").click(function(){
+      $('html, body').animate({scrollTop: $( $.attr(this, 'href')).offset().top - 150}, 400);
+    });
+  });
+</script>
+<script>
+  $(function(){
+    $(window).scroll(function(){
+      var winH = $(window).scrollTop();
+      if(winH > 308){
+        $("#right-nav").addClass("affix-top");
+      } else {
+        $("#right-nav").removeClass("affix-top");
+      }
+    });
   });
 </script>
 </body>

@@ -3,9 +3,8 @@
 {% include head.html %}
 <body>
 	<div id="banner" style="margin-bottom:0.5%;">
-		<div class="banner-text">Coding</div>
+		<div class="banner-text">{{ page.title }}</div>
 	</div>
-
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -18,29 +17,27 @@
 				</button>
 				<h2><a class="navbar-brand" style="font-size:115%;" href="../index.html">JAM</a><h2>
 				</div>
-
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="../code.html">Code</a></li>
-						<li><a href="#">Software</a></li>
-						<li><a href="#">Setup</a></li>
+						<li><a href="../linux.html">Linux</a></li>
+						<li><a href="../windows.html">Windows</a></li>
 						<li><a href="#">Search</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<h2><a class="navbar-brand" style="font-size:115%;display:none;" href="#">Coding</a></h2>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
 		<div class="code-container">
 			<ol class="breadcrumb">
-				<li><a href="../code.html">CODE</a></li>
-				<li><a href="../code.html#{{ page.category }}" style="text-transform:uppercase;">{{ page.category }}</a></li>
+				<li><a href="../{{ page.category }}.html" style="text-transform:uppercase;">{{ page.category }}</a></li>
+				<li><a href="../{{ page.category }}.html#{{ page.tag }}" style="text-transform:uppercase;">{{ page.tag }}</a></li>
 				<li class="active">{{ page.title }}</li>
 			</ol>
 			<div class="code-content">
-			{{ content }}
+				{{ content }}
 			</div>
 		</div>
 	</div>
@@ -48,11 +45,5 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="{{site.baseurl}}/javascripts/bootstrap.js"></script>
-	<script>
-		$(function(){
-			var r = new Resizor();
-			//r.resizeHeight(".code-container");
-		});
-	</script>
 </body>
 </html>

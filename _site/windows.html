@@ -45,58 +45,96 @@
 </div>
 
 <body>
-	<div id="banner" style="margin-bottom:0.5%;">
-		<div class="banner-text">Coding</div>
-	</div>
+<div id="banner" style="margin-bottom:0.5%;">
+  <div class="banner-text">Windows</div>
+</div>
 
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<h2><a class="navbar-brand" style="font-size:115%;" href="../index.html">JAM</a><h2>
-				</div>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <h2><a class="navbar-brand" style="font-size:115%;" href="index.html">JAM</a><h2>
+      </div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li><a href="../code.html">Code</a></li>
-						<li><a href="#">Software</a></li>
-						<li><a href="#">Setup</a></li>
-						<li><a href="#">Search</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<h2><a class="navbar-brand" style="font-size:115%;display:none;" href="#">Coding</a></h2>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-		<div class="code-container">
-			<ol class="breadcrumb">
-				<li><a href="../code.html">CODE</a></li>
-				<li><a href="../code.html#php" style="text-transform:uppercase;">php</a></li>
-				<li class="active">Data Object</li>
-			</ol>
-			<div class="code-content">
-			<p>PHP DAO test :3</p>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         <li><a href="code.html">Code</a></li>
+         <li><a href="linux.html">Linux</a></li>
+         <li><a href="windows.html">Windows</a></li>
+         <li><a href="#">Search</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+       </ul>
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+ </nav>
+ <div class="snippet-list-container">
+  <div class="list-group">
+   
+   
+   
+   
+  
+   
+   
+  
+   
+   
+  
 
-			</div>
-		</div>
-	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="/javascripts/bootstrap.js"></script>
-	<script>
-		$(function(){
-			var r = new Resizor();
-			//r.resizeHeight(".code-container");
-		});
-	</script>
+
+
+</div><!-- .list-group-->
+
+</div><!-- .snippet-list-container-->    
+
+
+
+</div>
+<div id="right-nav">
+ <div class="list-group">
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ </div>
+</div><!-- .right-nav-->
+
+
+<script src="/javascripts/bootstrap.js"></script>
+
+<script>
+  $(function(){
+    $("#right-nav a").click(function(){
+      $('html, body').animate({scrollTop: $( $.attr(this, 'href')).offset().top - 150}, 400);
+    });
+  });
+</script>
+<script>
+  $(function(){
+    $(window).scroll(function(){
+      var winH = $(window).scrollTop();
+      if(winH > 308){
+        $("#right-nav").addClass("affix-top");
+      } else {
+        $("#right-nav").removeClass("affix-top");
+      }
+    });
+  });
+</script>
 </body>
 </html>

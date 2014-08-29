@@ -14,7 +14,7 @@ $text-color: rgba(77,77,77,1);
 .affix-top{
 	position:fixed;
 	top:0;
-	right:0;
+	width:19.65% !important;
 	z-index:1px;
 	border-top:1px solid transparent !important;
 }
@@ -203,7 +203,7 @@ body{
 		//border:1px solid $text-color;
 		border-radius:5px 5px 5px 5px;
 		margin-bottom:1%;
-		box-shadow: 0.5px 1px 0.5px $text-color;
+		box-shadow: 0.5px 1px 0.5px rgba($text-color,0.62);
 		//color:white;
 		//background-color:$main-color;
 
@@ -214,7 +214,7 @@ body{
 	}
 }
 
-h1.category-title{
+h1.tag-title{
 	text-transform:uppercase;
 	color:$text-color;
 	font-weight:bold;
