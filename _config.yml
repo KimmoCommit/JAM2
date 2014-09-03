@@ -23,6 +23,8 @@ prose:
           element: "select"
           label: "Category"
           options:
+            - name: "Blog"
+              value: "blog"
             - name: "CSS"
               value: "css"
             - name: "Java"
