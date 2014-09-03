@@ -11,8 +11,12 @@ prose:
       - name: "layout"
         field:
           label: "Layout"
-          element: "hidden"
-          value: "code-layout"
+          element: "select"
+          options:
+            - name: "Post"
+              value: "post"
+            - name: "Blog"
+              value: "blog"
       - name: "published"
         field:
           element: "checkbox"

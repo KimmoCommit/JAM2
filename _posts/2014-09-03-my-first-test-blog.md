@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 published: true
 title: My first test blog
 category: blog
