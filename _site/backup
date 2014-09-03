@@ -188,6 +188,32 @@
           
           
           
+          
+          <div class="list-category-container">
+            <h1 class="category-title" style="padding:10px;" id="blog">
+              Blog
+            </h1>
+            
+            
+            
+          
+          
+            
+            
+            <a href="/blog/my-first-test-blog.html" class="list-group-item post">
+              <h4 class="list-group-item-heading">
+                My first test blog
+              </h4>
+              <p class="list-group-item-text">
+                Testing blogging feature within my Jekyll project
+              </p>
+            </a>
+          </div>
+          
+          
+          
+          
+          
         </div><!-- .list-group-->
       </div><!-- .snippet-list-container-->
 
@@ -220,6 +246,15 @@
          
          <a href="#php" class="list-group-item">
            Php
+           <span class="badge">
+             1
+           </span>
+         </a>
+         
+         
+         
+         <a href="#blog" class="list-group-item">
+           Blog
            <span class="badge">
              1
            </span>

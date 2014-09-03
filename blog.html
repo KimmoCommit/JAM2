@@ -45,10 +45,10 @@ layout: default
     {% for p in zz %}
     <a href="{{ site.baseurl }}{{ p.url }}" class="list-group-item post">
       <h4 class="list-group-item-heading">
-        {{ p.title }}
+        {{ p.title }} <div style="display:inline-block;float:right;">{{ p.date | date: "%d-%m-%Y" }}</div>
       </h4>
       <p class="list-group-item-text">
-        {{ p.description }}
+        {{ p.description }} 
       </p>
     </a>
   </div>

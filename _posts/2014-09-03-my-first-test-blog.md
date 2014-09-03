@@ -1,8 +1,9 @@
 ---
-layout: "code-layout"
+layout: post
 published: true
 title: My first test blog
 category: blog
+tag: Basic
 description: Testing blogging feature within my Jekyll project
 ---
 
